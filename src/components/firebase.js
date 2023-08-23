@@ -11,7 +11,7 @@ firebase.initializeApp({
 });
 
 // const auth=firebase.auth();
-// const storage=firebase.storage();
-//
-// export {storage,auth};
+const storage=firebase.storage();
+
+export {storage,auth};
 

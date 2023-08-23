@@ -6,8 +6,8 @@ import insta_logo from '../../images/logoinsta.png';
 import fb from '../../images/fb.png';
 import appstore from '../../images/app.png';
 import playstore from '../../images/play.png';
-// import SignIN from '../SignIn/SignIN';
-// import SignUp from '../SignUp/SignUp';
+import SignIN from '../SignIn/SignIN';
+import SignUp from '../SignUp/SignUp';
 
 class LoginPage extends Component {
     constructor(props) {
@@ -42,14 +42,8 @@ class LoginPage extends Component {
 
                                      {
                                          // TODO
-                                         this.state.isLogin ? console.log("SignIn") : console.log("SignUp")
+                                         this.state.isLogin ? <SignIN/> : <SignUp/>
                                      }
-                                       <div>
-                                           <input className="logipage__text" type="text" placeholder="Phone number, username, or email" />
-                                           <input className="logipage__text" type="password" placeholder="Password" />
-                                           <button className="login__button">Log In</button>
-                                       </div>
-
                                         <div className="login__ordiv">
                                             <div className="login__dividor"></div>
                                             <div className="login__or">OR</div>
