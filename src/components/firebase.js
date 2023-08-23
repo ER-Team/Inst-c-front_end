@@ -1,17 +1,21 @@
-// import firebase from "firebase/compat/app";
-// import "firebase/compat/auth";
-//
-// firebase.initializeApp({
-//   apiKey: "AIzaSyBiImFCXW14MtnHNmLedceYeEyA3LIZr7A",
-//   authDomain: "instaclone-b1b16.firebaseapp.com",
-//   projectId: "instaclone-b1b16",
-//   storageBucket: "instaclone-b1b16.appspot.com",
-//   messagingSenderId: "633280563245",
-//   appId: "1:633280563245:web:221f31c7947575042510a4"
-// });
-//
-// // const auth=firebase.auth();
-// const storage=firebase.storage();
-//
-// export {storage,auth};
+import {initializeApp} from "firebase/app";
+import {getAuth} from "firebase/auth";
+import {getStorage} from "firebase/storage"
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDXPoHnqw-pLF3GbxELbZcelSkZ7JH0_Yg",
+    authDomain: "insc-89879.firebaseapp.com",
+    projectId: "insc-89879",
+    storageBucket: "insc-89879.appspot.com",
+    messagingSenderId: "81809828983",
+    appId: "1:81809828983:web:35513c0685cc48794bea72",
+    measurementId: "G-4RZK9FWHT2"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const storage = getStorage(app)
+
+export {auth, storage}
 

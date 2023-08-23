@@ -1,0 +1,21 @@
+body {
+    background-color: #fafafa;
+}
+.maincontent__container {
+    max-width: 35% !important;
+    overflow-y: scroll;
+}
+
+.maincontent__container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .maincontent__container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .sub_content__container {
+      padding-left: 20px;
+  }
